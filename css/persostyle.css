@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Background */
+    .background{   
+    height: 5vh;
+    width: 100%;
+    background: url("../img/background.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px;
+}
+/* Divider */
+.divider {
+    height: 5vh;
+    width: 100%;
+    background: url("../img/background.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* Accueil */
+.home{
+    height: 100vh;
+    width: 100%;
+    background: url("../img/background.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .home__content {
+  width: 90%;
+  height: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .text__one{
+    font-size: 25px;
+    color: white;
+}
+.home .text__two{
+    color: white;
+    font-size: 55px;
+    font-weight: 600;
+    margin-left: -3px;
+  }
+  .home .text__three{
+    font-size: 33px;
+    margin: 5px 0;
+    color: #F24141;
+  }
+  .home .text__four{
+    font-size: 23px;
+    margin: 5px 0;
+    color: white;
+}
+i {
+    color:white;
+}
+/* A Propos */
+section{
+    padding-top:40px;
+}
+section .content {
+    width: 80%;
+    margin: 20px auto;
+    font-family: 'Poppins',sans-serif;
+}
+.about .about__details{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .title  {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+section .title span {
+    color: #F24141;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+}
+section .title span::before,
+section .title span::after {
+    content:'';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #F24141;
+    left: 0;
+    bottom: 0;
+}
+section .title span::after{
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about .about__details .left{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.about .left img{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.about__details .right{
+    width: 90%;
+    margin: 40px 0;
+}
+section .topic {
+    color: #22242A;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.about__details .right p{
+    text-align: justify;
+    color:#22242A;
+}
+
+button {
+    outline: none;
+    padding: 15px 16px;
+    border-radius: 4px;
+    font-size: 25px;
+    font-weight: 400;
+    background: black;
+    color: white;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin: 16px 0;
+}
+button:hover{
+    border-color: black;
+    background-color: white;
+    color: black;
+}
+/* Projets */
+.projects__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.projects__img{
+  max-width: 75%;
+  height: 75%;
+  margin: 15px 0;
+  max-width: 100%;
+
+}
+.projects__description{
+  text-align: justify;
+  margin: 45px 0;
+  width: 80%;
+}
+.projects__btn {
+  text-decoration: none;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  background: black;
+  color: white;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin-top: 15px;
+}
+.projects__btn:hover{
+  border-color: black;
+  background-color: white;
+  color: black;
+}
+
+/* Contact */
+.form__input, .form__textarea {
+    width: 100%;
+}
+.form__textarea{
+    min-height: 50px;
+}
+.btn__container{
+    display: flex;
+    justify-content: center;
+}
+
+/* footer */
+footer{
+    background: black;
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  footer .text span{
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
+  }
+  footer .text span a{
+    font-weight: 500;
+    color: #FFF;
+  }
+  footer .text span a:hover{
+    text-decoration: underline;
+  }
+/* To top arrow*/
+.scroll-button a{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    background: black;
+    padding: 7px 12px;;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    display: none;
+  }
+/* Media Queries */
+@media (min-width: 1000px) {
+    .about .about__details{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .about .about__details .left{
+        width: 45%;
+      }
+      .about__details .right{
+        width: 55%;
+      }
+      .about .left img{
+        height: 350px;
+        width: 350px;
+      }
+      .projects__placement{
+          display: flex;
+      }
+      .form{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          max-width: 800px;
+          margin: 10px auto;
+      }
+}
