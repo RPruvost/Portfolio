@@ -169,7 +169,7 @@ button:hover{
 
 }
 .projects__description{
-  text-align: justify;
+  text-align: center;
   margin: 45px 0;
   width: 80%;
 }
@@ -234,7 +234,6 @@ footer{
     padding: 7px 12px;;
     font-size: 18px;
     border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.15);
     display: none;
   }
 /* Media Queries */
