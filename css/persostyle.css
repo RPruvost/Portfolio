@@ -63,41 +63,6 @@
     margin: 5px 0;
     color: white;
 }
-.home .text__three {
-
-    text-transform: capitalize;
-    font-family: consolas;
-    border-right: solid 3px black;
-    animation: typist 15s steps(28) infinite, caret 0.7s infinite step-end;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-@keyframes caret {
-    0%, 100%{
-        border-color: transparent;
-    }
-    50%{
-        border-color: white;
-    }
-}
-@keyframes typist{
-    0%{
-        width: 0ch;
-    }
-    30%{
-        width: 28ch;
-    }
-    80%{
-        width: 28ch;
-    }
-    90%{
-        width: 0ch;
-    }
-    100%{
-        width: 0ch;
-    }
-}
 
 i {
     color:white;
